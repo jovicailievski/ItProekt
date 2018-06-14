@@ -52,7 +52,7 @@ namespace NovProekt.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Ime,Cena,RestaurantId")] Food food)
+        public ActionResult Create([Bind(Include = "Id,Ime,Cena,RestaurantId,Url")] Food food)
         {
             if (ModelState.IsValid)
             {
